@@ -9,15 +9,16 @@ html{
 
 body{
     font-family: "Microsoft YaHei", sans-serif;
+    background: #F8F8F8;
 }
 
-header{
+body>header{
     height: 6.5vh;
     background: #91D4DA;
     position: relative;
 }
 
-header .go-back{
+body>header .go-back{
     position: absolute;
     left: 5vw;
     bottom: 0;
@@ -26,16 +27,16 @@ header .go-back{
     line-height: 6.5vh;
 }
 
-header .go-back-icon, header .go-back-label{
+body>header .go-back-icon, body>header .go-back-label{
     vertical-align: middle;
 }
 
-header .go-back-label{
+body>header .go-back-label{
     display: inline-block;
     font-size: 16px;
 }
 
-header h1{
+body>header h1{
     font-size: 16px;
     line-height: 6.5vh;
     text-align: center;
@@ -66,37 +67,202 @@ nav ul .active{
     bottom: 0;
 }
 
-body .banner{
+.body .banner{
     width: 100%;
     display: block;
 }
 
-body .labels{
+.body .labels{
     padding-top: 2vh;
     text-align: center;
     display: block;
+    background: #FFF;
 }
 
-body .label{
+.body .label{
     font-size: 12px;
-    width: 15.5vw;
+    width: 12.5vw;
     display: inline-block;
+    text-align: center;
+    margin: 0 2vw;
+}
+
+.body .label figure{
+    background: #91D4DA;
+    border-radius: 100%;
+    height: 12.5vw;
+}
+
+.body .label img{
+    width: 50%;
+    margin-top: 1vh;
+    margin-left: 0.1vh;
+}
+
+.body .label span{
+    display: inline-block;
+    margin-top: 1vh;
+}
+
+.body .columns{
+    border-top: 2px solid #F8F8F8;
+    display: flex;
+    background: #fff;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+.body .column{
+    position: relative;
+    display: table;
+    height: 30vh;
+    border-right: 2px solid #F8F8F8;
+    width: 33%;
+}
+
+.body .column figure{
+    position: relative;
+    height: 25vh;
+    width: 30vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.body .column figure img{
+    width: 30vw;
+    display: table-cell;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.body .column h2{
+    font-size: 18px;
     text-align: center;
 }
 
-body .label figure{
-    background: #91D4DA;
-    border-radius: 100%;
-    height: 15.5vw;
-
+.body .column h3{
+    font-size: 14px;
+    text-align: center;
 }
 
-body .label img{
+.body .column:last-child{
+    border: 0;
+}
+
+article.module{
+    position: relative;
+    margin-top: 2vh;
+    background: #fff;
+}
+
+article.module header{
+    font-size: 16px;
+    height: 6vh;
+    line-height: 6vh;
+    padding-left: 4vw;
+    border-bottom: 2px solid #F8F8F8;
+}
+
+article.module figure{
+    position: relative;
+    display: inline-block;
+    margin: 4vw;
+    width: 25vw;
+    height: 14vh;
+}
+
+article.module img{
+    position: absolute;
+    width: 100%;
+}
+
+article.module section{
+    position: relative;
+}
+
+article.module section ul {
+    width: 60%;
+    display: inline-block;
+    font-size: 12px;
+    position: relative;
+    bottom: 6vh;
+}
+
+article.module section li{
+    display: inline-block;
+    background: #F8F8F8;
+    width: 25vw;
+    margin: 1vh;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+}
+
+.articles .article{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.articles .article-picture{
+    margin: 3vw;
+    width: 40%;
+    display: inline-block;
+}
+
+.article-picture img{
+    width: 100%;
+}
+
+.article section{
+    display: inline-block;
     width: 50%;
-    margin-top: 1.5vh;
-    margin-left: 0.3vh;
 }
 
-body columns{
-    border-top: 2px solid #AEAEAE;
+.article section header{
+    position: absolute;
+    top: 1vh;
+    font-size: 16px;
+    color: #000;
+}
+
+.article section aside{
+    font-size: 12px;
+    color: #C6C6C6;
+}
+
+.article:last-child{
+
+}
+
+.article:last-child header{
+    left: 3vw;
+}
+
+.article:last-child section{
+    width: 100%;
+}
+
+.article:last-child ul{
+    margin-top: 6vh;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.article:last-child li{
+    display: inline-block;
+    width: 30%;
+}
+
+.article:last-child li img{
+    width: 100%;
+}
+
+.article:last-child aside{
+    margin-left: 3vw;
 }
