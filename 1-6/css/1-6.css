@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #44565C;
+  color: #767777;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  margin: 0 auto;
+}
+
+.main {
+  width: 980px;
+  height: 1386px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 44px;
+}
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  width: 892px;
+  font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+  font-size: 12px;
+  border-bottom: 2px solid #938e8c;
+  margin-bottom: 20px;
+}
+
+.banner .top-left-text {
+  display: block;
+  width: 110px;
+  height: 60px;
+  background: #d45d5c;
+  color: #fff;
+  line-height: 100px;
+}
+
+.banner .top-left {
+  float: left;
+  width: 110px;
+  height: 61px;
+  background: #d45d5c;
+  color: #ffffff;
+}
+
+.banner .top-right {
+  float: right;
+  margin-top: 45px;
+  color: #d45d5c;
+}
+
+div .page-top {
+  position: relative;
+  width: 892px;
+  top: auto;
+}
+
+div.left-image-blocker {
+  position: absolute;
+  top: 0px;
+  /*float: left;*/
+  width: 191px;
+  height: 301px;
+  opacity: 0.2;
+  background: green;
+}
+
+div.right-image-blocker {
+  position: absolute;
+  right: 251px;
+  top: 0px;
+  width: 191px;
+  height: 301px;
+  opacity: 0.2;
+  background: red;
+}
+
+div .top-left-image {
+  position: relative;
+}
+
+div .page-top-right {
+  border-top: solid 2px #cc8091;
+  position: absolute;
+  display: block;
+  width: 203px;
+  top: 0px;
+  right: 0px;
+}
+
+.page-top-right p {
+  margin-top: 0px;
+  font-size: 12px;
+  color: #676767;
+  font-family: "KaiTi_GB2312";
+  margin-bottom: 10px;
+}
+
+.page-top-right .number {
+  margin-top: -40px;
+  font-size: 116px;
+  color: #75b86b;
+  font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.page-top-right .top-right-down {
+  position: relative;
+  font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+  color: #cc8091;
+}
+
+.lvl-1 {
+  position: absolute;
+  font-size: 55px;
+  top: 0px;
+}
+
+.lvl-2 {
+  position: absolute;
+  font-size: 21px;
+  top: 20px;
+  right: 80px;
+}
+
+.lvl-3 {
+  position: absolute;
+  font-size: 12px;
+  right: 15px;
+  top: 43px;
+}
+
+.title-top-right {
+  font-size: 24px;
+  font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.middle {
+  width: 641px;
+}
+
+.middle>div {
+  float: left;
+  vertical-align: top;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 30%;
+}
+
+.middle>.middle-3 {
+  margin-right: 0;
+}
+
+.middle .text {
+  font-family: "SimSun";
+  font-size: 12px;
+  color: #767777;
+  margin-bottom: 16px;
+}
+
+.middle .middle-1 .title-middle {
+  color: #418c59;
+}
+
+.middle .middle-2 .title-middle {
+  color: #d2994f;
+}
+
+.middle .middle-3 .title-middle {
+  color: #cc7680;
+}
+
+.middle-insert {
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+
+.middle-insert .percent {
+  color: #cd4a48;
+  font-style: italic;
+}
+
+.title-middle {
+  font-size: 16px;
+  font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+  font: bold;
+  text-decoration: underline;
+}
+
+.bottom {
+  clear: left;
+  width: 892px;
+}
+
+.bottom-left {
+  float: left;
+  margin-right: 15px;
+  width: 415px;
+}
+
+.bottom-right {
+  float: left;
+  top: 0px;
+  width: 458px;
+}
+
+.bottom-left-title {
+  font-family: SimHei;
+  font-size: 42px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: #11456b;
+}
+
+.first-character {
+  text-indent: 0px;
+  font-size: 72px;
+  color: #f5e327;
+  font-style: italic;
+}
+
+.bottom-left-text {
+  text-indent: 2em;
+  font-size: 12px;
+  color: #767777;
+  font-family: "Helvetica", SimSun, serif;
+}
+
+.bottom-left-text .first-character {
+  float: left;
+  font-style: normal;
+}
+
+.bottom-first-paragraph {
+  text-indent: 0;
+}
+
+.bottom-left-pic {
+  float: right;
+  position: relative;
+}
+
+.bottom-right-pic {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bottom-right-pic .text-container {
+  position: absolute;
+  bottom: 3px;
+  height: 61px;
+  width: 458px;
+  background-color: grey;
+  opacity: 0.7;
+}
+
+.description {
+  width: 435px;
+  height: 44px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  border-left: solid 3px #72b16a;
+}
+
+.bottom-right-pic .text-container .background-text {
+  float: left;
+  font-size: 12px;
+  font-style: italic;
+  font-family: SimHei;
+  background-color: grey;
+  color: #72b16a;
+  position: absolute;
+  left: 150px;
+  bottom: 0;
+}
+
+.bottom-right-pic .text-container .white-text {
+  font-size: 26px;
+  float: left;
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+}
+
+.bottom-right-bottom {
+  background: #eeeed6;
+  overflow: hidden;
+  font-family: SimSun;
+
+}
+
+.bottom-right-bottom>p{
+  display: list-item;
+  margin-left: 20px;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.bottom-right-bottom .lesser{
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+}
+
+.art_r_down_l{
+	width:260px;
+	height:160px;
+	background: #ea2d70;
+	float: left;
+}
+.art_r_down_l span{
+	font-size:110px;
+	color:#ffffff;
+	float: left;
+	padding:0 10px;
+}
+.art_r_down_l .line{
+	border-left:2px solid #ffffff;
+	height:86px;
+	float: left;
+	margin-top: 35px;
+}
+.art_r_down_l .mark_one{
+	font: italic 21px/24px "黑体";
+	color: #fff;
+	margin-left:10px;
+	margin-bottom: 20px;
+}
+.art_r_down_l .mark_two{
+	 font: 12px/10px "黑体";
+	 color: #fff;
+	margin-left:10px;
+}
+.art_r_down_r{
+	float: right;
+	width: 150px;
+  height: 160px;
+	margin-top: 30px;
+}
+.art_r_down_r p span{
+	font: 72px "黑体";
+	color: #d45d5c;
+}
+.art_r_down_r p .mark_one{
+	float: left;
+	margin: -18px 10px 0 -40px;
+	height: 30px;
+}
+.art_r_down_r p .mark_two{
+	float:right;
+}
+
+.art_r_down_r p{
+	font:italic 14px/16px "SimHei";
+	color:#5a5b5b;
+}
+footer{
+	clear:both;
+	width: 892px;
+	height: 59px;
+	border-top: 1px solid #938e8c;
+}
+footer .ife_url{
+	float: right; font: 12px "黑体"; color: #d45d5c;
+}

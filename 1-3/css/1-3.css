@@ -1,0 +1,49 @@
+#main{
+  background: #eee;
+  padding: 20px;
+}
+
+.box{
+  display: block;
+  background: white;
+  border: 1px solid #999;
+  padding: 20px;
+}
+
+#left{
+  /*position: relative;*/
+  float: left;
+  min-width: 160px;
+}
+
+#right{
+  /*position: relative;*/
+  float: right;
+  max-width: 80px;
+}
+
+#middle{
+  margin-left: 220px;
+  margin-right: 140px;
+}
+
+.members{
+  width: 80px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#team_name{
+  display: block;
+  float: right;
+  width: 70px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#team_logo{
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
