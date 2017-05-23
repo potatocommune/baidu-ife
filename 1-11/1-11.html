@@ -1,22 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#91D4DA">
+    <link rel="stylesheet" href="css/1-11.css" />
     <title>这是标题</title>
 </head>
 
 <body>
   <header>
-      <img src="img/left-arrow.svg" />
-      <span class="go-back-label">返回</span>
-      <span class="page-title">这是标题</span>
+      <a class="go-back" href="#">
+          <img class="go-back-icon" src="img/left-arrow.svg" height="20px" alt="返回" />
+          <span class="go-back-label">返回</span>
+      </a>
+      <h1>这是标题</h1>
   </header>
 
   <nav>
-      <ul>
-          <li>导航</li>
-          <li>导航</li>
-          <li>导航</li>
-          <li>导航</li>
-          <li>导航</li>
+      <ul class="navigation-tabs">
+          <li class="navigation-tab">导航</li>
+          <li class="navigation-tab active">导航</li>
+          <li class="navigation-tab">导航</li>
+          <li class="navigation-tab">导航</li>
+          <li class="navigation-tab">导航</li>
       </ul>
   </nav>
 
@@ -25,40 +32,50 @@
   <img class="banner" src="img/bear-figure.png" />
 
   <div class="labels">
-      <div>
-          <img src="img/doc.svg" />
+      <div class="label">
+          <figure>
+              <img src="img/doc.svg" alt="Clipboard" />
+          </figure>
           <div>标签</div>
       </div>
-      <div>
-          <img src="img/doc.svg" />
+      <div class="label">
+          <figure>
+              <img src="img/doc.svg" alt="Clipboard" />
+          </figure>
           <div>标签</div>
       </div>
-      <div>
-          <img src="img/doc.svg" />
+      <div class="label">
+          <figure>
+              <img src="img/doc.svg" alt="Clipboard" />
+          </figure>
           <div>标签</div>
       </div>
-      <div>
-          <img src="img/doc.svg" />
+      <div class="label">
+          <figure>
+              <img src="img/doc.svg" alt="Clipboard" />
+          </figure>
           <div>标签</div>
       </div>
-      <div>
-          <img src="img/doc.svg" />
+      <div class="label">
+          <figure>
+              <img src="img/doc.svg" alt="Clipboard" />
+          </figure>
           <div>标签</div>
       </div>
   </div>
 
   <div class="columns">
-      <div>
+      <div class="column">
           <img src="img/bear-column-1.png" />
           <div>分栏一</div>
           <div>分栏小标题</div>
       </div>
-      <div>
+      <div class="column">
           <img src="img/bear-column-2.png" />
           <div>分栏二</div>
           <div>分栏小标题</div>
       </div>
-      <div>
+      <div class="column">
           <img src="img/bear-column-3.png" />
           <div>分栏三</div>
           <div>分栏小标题</div>
