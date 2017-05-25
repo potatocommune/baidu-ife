@@ -29,6 +29,8 @@
 
     <button id="sort-btn">排序</button>
 
+
+    <script src="js/jquery.min.js"></script>
     <script type="text/javascript">
         /**
          * getData方法
@@ -39,12 +41,12 @@
             /*
             coding here
             */
-            var ul = document.getElementById("source");
+            var ul = $("#source");
             var data = [];
-            for (var i = 0; i < ul.childElementCount; i++) {
-                var li = ul.children[i];
-                var strCity = li.innerHTML.split("空气质量：")[0];
-                var num = Number(li.children[0].innerHTML);
+            for (var i = 0; i < ul.find("li").length; i++) {
+                var li = $("li").eq(i);
+                var strCity = li.html().split("空气质量：")[0];
+                var num = Number($("b").eq(i).html());
                 data.push([strCity, num]);
             }
             /*
@@ -77,29 +79,28 @@
          * 格式见ul中的注释的部分
          */
         function render(data) {
-            var ul = document.getElementById("resort");
+            var ul = $("#resort");
             var items = "";
             for (var i = 0; i < data.length; i++) {
                 var aqiData = data[i];
                 items += '<li>第' + (i + 1) + '名' + aqiData[0] + '空气质量：<b>' + aqiData[1] + '</b></li>';
             }
-            ul.innerHTML = items;
+            ul.html(items);
         }
 
         function btnHandle() {
             var aqiData = getData();
             aqiData = sortAqiData(aqiData);
             render(aqiData);
-            var btn = document.getElementById("sort-btn");
-            btn.disabled = true;
+            $("#sort-btn").prop('disabled', true);
         }
 
 
         function init() {
 
             // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
-            var btn = document.getElementById("sort-btn");
-            btn.onclick = btnHandle;
+            var btn = $("#sort-btn");
+            btn.click(btnHandle);
         }
 
         init();

@@ -16,13 +16,13 @@
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript">
     $("#button").click(function(){
-        var input = document.getElementById("aqi-input").value;
+        var input = $("#aqi-input").val();
         var pattern = /[^0-9]+/;
         if (input=="") {
-            window.alert("请输入有效数值");
+            alert("请输入有效数值");
             return false;
         } else if (pattern.test(input)) {
-            window.alert("非有效输入")    
+            alert("非有效输入")
         }
         else {
             $("#aqi-display").text(input);
